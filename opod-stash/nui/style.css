@@ -1,0 +1,107 @@
+ @font-face {
+            font-family: 'digital-7';
+            src: url('./digital-7.ttf');
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            user-select: none;
+        }
+        body { 
+            background: transparent;
+            height: 100vh;
+        }
+
+        #keypad > form > div {
+            margin: 0 auto;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+
+        .numbers {
+            width: calc(100% / 3.4936);
+            margin: 0.2em;
+            border: 0;
+            height: 3em;
+            outline: 0;
+        }
+        #input {
+            width: 100%;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            font-family: 'digital-7', cursive;
+            letter-spacing: .5em;
+            outline: none;
+            border: 0;
+            margin-bottom: 1.5em;
+            font-size: 2em;
+            padding: 0.25em;
+            padding-left: 0.7em;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #keypad form div {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: rgba(255, 255, 255, 0.15);
+            font-size: 1.5em;
+            transition: background ease-in-out 0.3s;
+            transition: color ease-in-out 0.3s;
+        }
+        #secure {
+            outline: 0;
+            border: 0;
+            font-size: 1.3em;
+            display: block;
+            margin: 0 auto;
+            /* margin: 10%; */
+            padding: .2em;
+        }
+
+        .secureActive {
+            color: red;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.5);
+            color: white;
+        }
+
+        div #numpad {
+            margin: 0 auto;
+            padding: 20px 0px !important;
+        }
+
+        #main {
+            background: rgba(0, 0, 0, 0.8) !important;
+            height: 100vh;
+            opacity: 0;
+            transition: opacity ease-in-out 0.5s;
+        }
+
+        #keypad {
+            width: 300px;
+            background: rgb(111, 112, 112);
+            border-radius: 0.2em;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }

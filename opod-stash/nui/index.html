@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keypad</title>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+        <button id="secure">Secure</button>
+        <div id="keypad">
+            <form>
+                <div>
+                    <input type="text" id="input" maxlength="4" placeholder="0000" autocomplete="off">
+                    <div id="numpad">
+                        <button class="numbers">1</button>
+                        <button class="numbers">2</button>
+                        <button class="numbers">3</button>
+                        
+                        <button class="numbers">4</button>
+                        <button class="numbers">5</button>
+                        <button class="numbers">6</button>
+                        
+                        <button class="numbers">7</button>
+                        <button class="numbers">8</button>
+                        <button class="numbers">9</button>
+                        
+                        <button class="numbers">C</button>
+                        <button class="numbers">0</button>
+                        <button class="numbers">X</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ==" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
